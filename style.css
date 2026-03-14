@@ -32,9 +32,27 @@ z-index:100;
 }
 
 .logo{
-font-size:22px;
+font-size:26px;
 font-weight:600;
 color:#38bdf8;
+text-decoration:none;
+letter-spacing:1px;
+position:relative;
+}
+
+.logo::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-4px;
+width:0%;
+height:2px;
+background:#38bdf8;
+transition:0.3s;
+}
+
+.logo:hover::after{
+width:100%;
 }
 
 nav{
