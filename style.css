@@ -197,16 +197,54 @@ color:#cbd5f5;
 
 /* CAROUSEL */
 
-.carousel{
-margin-top:25px;
-overflow-x:auto;
-display:flex;
-gap:20px;
+.carousel-container{
+position:relative;
+max-width:600px;
+margin:auto;
+overflow:hidden;
 }
 
-.carousel img{
-width:260px;
+.carousel-track{
+display:flex;
+transition:transform 0.5s ease;
+}
+
+.carousel-item{
+min-width:100%;
+padding:10px;
+}
+
+.carousel-item img{
+width:100%;
 border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* buttons */
+
+.carousel-btn{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+background:rgba(0,0,0,0.5);
+border:none;
+color:white;
+font-size:18px;
+padding:12px;
+cursor:pointer;
+border-radius:50%;
+}
+
+.carousel-btn:hover{
+background:#38bdf8;
+}
+
+.prev{
+left:10px;
+}
+
+.next{
+right:10px;
 }
 
 /* SKILLS */
